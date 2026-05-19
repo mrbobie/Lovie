@@ -1,0 +1,98 @@
+/* Spotify Style Music Player */
+
+.spotify-player{
+    max-width:700px;
+    margin:auto;
+    background:rgba(255,255,255,0.08);
+    border-radius:30px;
+    padding:30px;
+    display:flex;
+    align-items:center;
+    gap:30px;
+    backdrop-filter:blur(15px);
+    box-shadow:0 0 20px rgba(255,255,255,0.05);
+    flex-wrap:wrap;
+}
+
+.album-cover img{
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+.music-info{
+    flex:1;
+}
+
+.music-info h3{
+    font-size:2rem;
+    margin-bottom:10px;
+    color:#ffb3d1;
+}
+
+.music-info p{
+    color:#ddd;
+    margin-bottom:25px;
+}
+
+.progress-container{
+    width:100%;
+    height:8px;
+    background:rgba(255,255,255,0.1);
+    border-radius:20px;
+    overflow:hidden;
+    margin-bottom:15px;
+}
+
+.progress-bar{
+    width:0%;
+    height:100%;
+    background:linear-gradient(45deg,#ff4d88,#ff7eb3);
+    transition:0.1s;
+}
+
+.time{
+    display:flex;
+    justify-content:space-between;
+    font-size:0.9rem;
+    color:#ccc;
+    margin-bottom:25px;
+}
+
+.controls{
+    display:flex;
+    justify-content:center;
+}
+
+.controls button{
+    width:70px;
+    height:70px;
+    border:none;
+    border-radius:50%;
+    background:linear-gradient(45deg,#ff4d88,#ff7eb3);
+    color:white;
+    font-size:1.5rem;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.controls button:hover{
+    transform:scale(1.1);
+    box-shadow:0 10px 20px rgba(255,77,136,0.4);
+}
+
+@media(max-width:768px){
+
+.spotify-player{
+    text-align:center;
+    justify-content:center;
+}
+
+.album-cover img{
+    width:180px;
+    height:180px;
+}
+
+}
